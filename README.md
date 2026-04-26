@@ -4,12 +4,12 @@ If you want to own and edit this entire stack—including all the sub-repositori
 
 ### 1. Fork the Component Repositories
 First, create your own copies of the individual projects. Visit each link and click the **Fork** button at the top right:
-* [Fork the Flask Backend](https://github.com)
-* [Fork the Pages Frontend](https://github.com)
-* [Fork the Spring Backend](https://github.com)
+* [Fork the Flask Backend]([https://github.com](https://github.com/Open-Coding-Society/flask))
+* [Fork the Pages Frontend]([https://github.com](https://github.com/Open-Coding-Society/pages))
+* [Fork the Spring Backend]([https://github.com](https://github.com/Open-Coding-Society/spring))
 
 ### 2. Fork this Parent Repository
-Next, click the **Fork** button at the top of this page ([codespaces-fullstack](https://github.com)).
+Next, click the **Fork** button at the top of this page ([codespaces-fullstack](https://github.com/Open-Coding-Society/codespaces-fullstack)).
 
 ### 3. Link Your Forks Together
 Now you must tell your copy of the parent repository to point to your personal forks instead of the originals.
@@ -21,13 +21,13 @@ Now you must tell your copy of the parent repository to point to your personal f
     ```ini
     [submodule "flask"]
     	path = flask
-    	url = https://github.com
+    	url = https://github.com/{YOUR_USERNAME}/{YOUR_FLASK_FORK_NAME}
     [submodule "pages"]
     	path = pages
-    	url = https://github.com
+    	url = [https://github.com](https://github.com/{YOUR_USERNAME}/{YOUR_PAGES_FORK_NAME})
     [submodule "spring"]
     	path = spring
-    	url = https://github.com
+    	url = [https://github.com](https://github.com/{YOUR_USERNAME}/{YOUR_SPRING_FORK_NAME})
     ```
 5.  Click the **Source Control** icon on the left sidebar (it looks like a branch).
 6.  Type a message like `Relink submodules to my forks` and click **Commit and Push**.
