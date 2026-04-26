@@ -1,0 +1,41 @@
+{
+  "name": "OCS Full Stack Workspace",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+
+  "features": {
+    "ghcr.io/devcontainers/features/python:1": {
+      "version": "3.11"
+    },
+    "ghcr.io/devcontainers/features/java:1": {
+      "version": "21"
+    },
+    "ghcr.io/devcontainers/features/ruby:1": {
+      "version": "3.2"
+    },
+    "ghcr.io/devcontainers/features/github-cli:1": {}
+  },
+
+  "forwardPorts": [4500, 8587, 8585],
+
+  "portsAttributes": {
+    "4500": { "label": "Pages Frontend" },
+    "8587": { "label": "Flask Backend" },
+    "8585": { "label": "Spring Backend" }
+  },
+
+  "postCreateCommand": "bash .devcontainer/setup.sh",
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-python.pylance",
+        "vscjava.vscode-java-pack",
+        "vmware.vscode-spring-boot",
+        "yzhang.markdown-all-in-one",
+        "Shopify.theme-check-vscode",
+        "humao.rest-client"
+      ]
+    }
+  }
+}
