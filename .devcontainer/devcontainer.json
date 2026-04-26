@@ -11,16 +11,21 @@
     },
     "ghcr.io/devcontainers/features/ruby:1": {
       "version": "3.2"
-    },
-    "ghcr.io/devcontainers/features/github-cli:1": {}
+    }
   },
 
   "forwardPorts": [4500, 8587, 8585],
 
   "portsAttributes": {
-    "4500": { "label": "Pages Frontend" },
-    "8587": { "label": "Flask Backend" },
-    "8585": { "label": "Spring Backend" }
+    "4500": {
+      "label": "Pages Frontend"
+    },
+    "8587": {
+      "label": "Flask Backend"
+    },
+    "8585": {
+      "label": "Spring Backend"
+    }
   },
 
   "postCreateCommand": "bash .devcontainer/setup.sh",
@@ -34,7 +39,8 @@
         "vmware.vscode-spring-boot",
         "yzhang.markdown-all-in-one",
         "Shopify.theme-check-vscode",
-        "humao.rest-client"
+        "humao.rest-client",
+        "qwtel.sqlite-viewer"
       ]
     }
   }
